@@ -391,8 +391,8 @@ textarea.md-in { display: block; resize: vertical; font-family: inherit; line-he
 (() => {
 // Настройка сайта: ключ Google Drive API (в консоли Google ограничен адресом сайта и только Drive API) и адрес сайта для ссылок «поделиться»
 // Версия сайта: исправление — +0.0.1, новая возможность — +0.1.0. Поднимать при каждой выкладке, история — docs/05-tools.md
-const VERSION = "1.9.2";
-const CONFIG = { driveKey: "AIzaSyBNtYHwkI9bE6d7V0TnHEMMbKZCoSr49As", site: "https://faworship.github.io/" };
+const VERSION = "1.9.3";
+const CONFIG = { driveKey: "AIzaSyBNtYHwkI9bE6d7V0TnHEMMbKZCoSr49As", site: "https://chartset.github.io/" };
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -2035,7 +2035,7 @@ async function pdfFile() {
       }
     }
   }
-  pdf.setTitle(pdfName); pdf.setCreator("faworship.github.io"); pdf.setProducer("ChartSet"); pdf.setLanguage("ru");
+  pdf.setTitle(pdfName); pdf.setCreator("chartset.github.io"); pdf.setProducer("ChartSet"); pdf.setLanguage("ru");
   return pdf.save();
 }
 // На телефоне — меню «Поделиться» (на iPhone скачанный PDF открывается вкладкой, и неясно, как его сохранить), на компьютере — скачивание.
